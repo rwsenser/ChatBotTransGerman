@@ -1,0 +1,59 @@
+{ "_comment": "2021-09-02: has date/*date* support; removed medical added .",
+	"intents": [
+        {"tag": "date",
+         "patterns": ["What is today?", "Today is?"],
+         "responses": ["Today is *date*."],
+         "context": [""]
+        },
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through the meaning of a few German words. "],
+         "context": [""]
+        },
+        {"tag": "quatch",
+         "patterns": ["What does quatsch mean?", "Quatch means what?" ],
+         "responses": ["Quatsch translates to nonsense."],
+         "context": [""]
+        },
+        {"tag": "doch",
+         "patterns": ["What does dock mean?", "Doch means what?"  ],
+         "responses": ["Doch translates to actually, after all or and yet."],
+         "context": [""]
+        },
+        {"tag": "nein",
+         "patterns": ["What does nein mean in German", "Nein means what?" ],
+         "responses": ["Nein translates to no."],
+         "context": [""]
+        },
+        {"tag": "ja",
+         "patterns": ["What does ja mean?", "Ja means what?"],
+         "responses": ["Ja means yes."],
+         "context": [""]
+        },
+        {"tag": "stimmt",
+         "patterns": ["What does stimmt mean?", "Stimmt means what?" ],
+         "responses": ["It means right or exactly."],
+         "context": [""]
+        }
+   ]
+}
